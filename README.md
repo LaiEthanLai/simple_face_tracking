@@ -39,10 +39,10 @@ When `--debug` is enabled, a debug video is generated in `$OUTPUT_DIR`, where ea
 #### Limitation
 1. It may fail to detect the face if it is partially occluded or not fully captured by the camera.
     Examples: 
-    [ex1](resources/ex1.gif)
+    ![ex1](resources/ex1.gif)
 2. Since the reference image is assumed to show the subject facing the camera, the algorithm has limited knowledge of the subject’s side profiles. As a result, face detection and similarity matching may fail when the subject turns away, and using past frames cannot fully mitigate this issue.
     Examples: 
-    [ex2](resources/ex2.gif)
+    ![ex2](resources/ex2.gif)
 3. If the subject is too far from the camera, the face may be too small for accurate detection and tracking.
     Examples: 
-    [ex3](resources/ex3.gif)
+    ![ex3](resources/ex3.gif)
