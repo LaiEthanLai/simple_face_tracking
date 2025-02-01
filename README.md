@@ -32,7 +32,7 @@ When `--debug` is enabled, a debug video is generated in `$OUTPUT_DIR`, where ea
 
 ### Assumption and Limitation
 
-#### Assumtion
+#### Assumption
 1. The reference image clearly captures the target's face, with the subject facing the camera.
 2. The target's face does not change significantly between consecutive frames, except during scene cuts.
 
