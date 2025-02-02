@@ -8,15 +8,15 @@ pip install --upgrade scenedetect[opencv]
 
 ### Run Examples
 
-#### Command to track face in `video.mp4`
+#### Command to track face
 ```bash
 python face_detect.py --video $PATH_TO_VID --ref_image $PATH_TO_REF_IMG --output $OUTPUT_DIR
 ```
-Use `--threshold` to specify the similarity threshold for face matching. The following table summarizes thresholds for each video in `examples`.
+Use `--threshold` to specify the similarity threshold for face matching.
 
 For example, to reproduce the result of tracking the target face in `examples/vids/hugh.mp4`, run
 ```bash
-python face_detect.py --video examples/vids/hugh.mp4 --ref_image examples/ref/hugh.jpg --output output/hugh
+python face_detect.py --video examples/vids/hugh.mp4 --ref_image examples/ref/hugh.jpg --output output/hugh --threshold 0.15 
 ```
 
 The following table summarizes the value of threshold that I used to produce results in `output`:
