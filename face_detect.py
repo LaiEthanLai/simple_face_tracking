@@ -84,9 +84,9 @@ def process_frames(frames, ref_embedding, app, output_path, threshold, fps, det_
                 similarity_ref = cosine_similarity([ref_embedding], [face_embedding])[0][0]
                 similarity_prev = cosine_similarity([prev_embedding], [face_embedding])[0][0] if prev_embedding is not None else 0
                 similarity = max(similarity_ref, similarity_prev)
-            face_embedding = face.embedding
-            if face_embedding is not None:
-                similarity = cosine_similarity([ref_embedding], [face_embedding])[0][0]
+            # face_embedding = face.embedding
+            # if face_embedding is not None:
+            #     similarity = cosine_similarity([ref_embedding], [face_embedding])[0][0]
                 if similarity > threshold and similarity > best_similarity:
                     best_similarity = similarity
                     best_face = face
